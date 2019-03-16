@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
-import github from "../img/github-icon.svg";
-import logo from "../img/logo.svg";
+// import github from "../img/github-icon.svg";
+// import logo from "../img/logo.svg";
+import "semantic-ui-css/semantic.min.css";
+import { Menu, Dropdown } from "semantic-ui-react";
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -42,7 +44,8 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: "88px" }} />
+              {/* <img src={logo} alt="Kaldi" style={{ width: "88px" }} /> */}
+              <Menu.Item header>श्री अंजनी लाल मंदिर धाम</Menu.Item>
             </Link>
             {/* Hamburger menu */}
             <div
@@ -60,6 +63,17 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
+              <Menu.Menu horizontal position="right">
+                <Dropdown item text="मंदिर">
+                  <Dropdown.Menu>
+                    <Dropdown.Item>श्री अंजनीलाल मंदिर</Dropdown.Item>
+                    <Dropdown.Item>श्री राम मंदिर</Dropdown.Item>
+                    <Dropdown.Item>
+                      श्री व्दादशज्योतिर्लिगेश्वर महादेव मंदिर
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </Menu.Menu>
               <Link className="navbar-item" to="/about">
                 About
               </Link>
@@ -84,7 +98,7 @@ const Navbar = class extends React.Component {
                 rel="noopener noreferrer"
               >
                 <span className="icon">
-                  <img src={github} alt="Github" />
+                  {/* <img src={github} alt="Github" /> */}
                 </span>
               </a>
             </div>
