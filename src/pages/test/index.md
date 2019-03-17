@@ -1,17 +1,25 @@
 ---
-templateKey: "product-page"
-path: /products
-title: Our Coffee
-image: /img/jumbotron.jpg
+templateKey: "queryTest"
+title: श्री अंजनीलाल मंदिर ट्रस्ट ब्यावरा, राजगढ़, मध्य प्रदेश
+image: /img/Parallax_01.jpg
 heading: Great coffee with a conscience
+subheading: म.प्र. शासन द्वारा पंजीकृत ट्रस्ट (धर्मिक, सामाजिक, राष्ट्रीय एवं मानव हितार्थ कार्यो में अग्रणी संस्था)
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
   roasting and brewing seriously and we’re glad to pass that knowledge to
   anyone.
+mainpitch:
+  title: Why Kaldi
+  description: >
+    Kaldi is the coffee store for everyone who believes that
+    great coffee shouldn't just taste good, it should do good
+    too. We source all of our beans directly from small scale
+    sustainable farmers and make sure part of the profits are
+    reinvested in their communities.
 intro:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/Slide_01_Ram_Mandir.jpg
       text: >
         We sell green and roasted coffee beans that are sourced directly from
         independent farmers and farm cooperatives. We’re proud to offer a
