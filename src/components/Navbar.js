@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 // import github from "../img/github-icon.svg";
 // import logo from "../img/logo.svg";
 import "semantic-ui-css/semantic.min.css";
-import { Menu, Dropdown } from "semantic-ui-react";
+import { Menu } from "semantic-ui-react";
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -63,31 +63,37 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
-              <Menu.Menu horizontal position="right">
-                <Dropdown item text="मंदिर">
-                  <Dropdown.Menu>
-                    <Dropdown.Item>श्री अंजनीलाल मंदिर</Dropdown.Item>
-                    <Dropdown.Item>श्री राम मंदिर</Dropdown.Item>
-                    <Dropdown.Item>
-                      श्री व्दादशज्योतिर्लिगेश्वर महादेव मंदिर
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-              </Menu.Menu>
+              {/* <Dropdown
+                item
+                text="मंदिर"
+                className="navbar-item"
+                style={{ top: "0px" }}
+              >
+                <Dropdown.Menu>
+                  <Dropdown.Item>श्री अंजनीलाल मंदिर</Dropdown.Item>
+                  <Dropdown.Item>श्री राम मंदिर</Dropdown.Item>
+                  <Dropdown.Item>
+                    श्री व्दादशज्योतिर्लिगेश्वर महादेव मंदिर
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown> */}
               <Link className="navbar-item" to="/about">
-                About
+                मंदिर
+              </Link>
+              <Link className="navbar-item" to="/about">
+                उपलब्धिया
               </Link>
               <Link className="navbar-item" to="/products">
-                Products
+                गतिविधिया
               </Link>
               <Link className="navbar-item" to="/blog">
-                Blog
+                इतिहास
               </Link>
               <Link className="navbar-item" to="/contact">
-                Contact
+                सदस्य गड़
               </Link>
               <Link className="navbar-item" to="/contact/examples">
-                Form Examples
+                संपर्क सूत्र
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
