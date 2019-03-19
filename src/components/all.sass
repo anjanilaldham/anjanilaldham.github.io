@@ -44,7 +44,7 @@ $black: #2b2523
 
 .full-width-image
     width: 100vw
-    height: 400px
+    height: 500px
     background-size: cover
     background-position: bottom
     display: flex
@@ -113,3 +113,246 @@ $menu-label-color: $white-ter
     display: inline
 
 @import "~bulma"
+
+
+//From
+
+.service-Main
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  background: #f6f9fc
+  position: relative
+  -webkit-box-flex: 1
+  -ms-flex: 1 1 100%
+  flex: 1 1 100%
+  margin: 15px
+  position: relative
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -ms-flex-direction: column
+  flex-direction: column
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  overflow: hidden
+  padding: 40px 40px 40px 120px
+  background-color: #fff
+  border-radius: 4px
+  -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07)
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07)
+  -webkit-transition-property: color, background-color, -webkit-box-shadow, -webkit-transform
+  transition-property: color, background-color, -webkit-box-shadow, -webkit-transform
+  transition-property: color, background-color, box-shadow, transform
+  transition-property: color, background-color, box-shadow, transform, -webkit-box-shadow, -webkit-transform
+  -webkit-transition-duration: .15s
+  transition-duration: .15s
+
+.service-section
+  padding-left: 2%
+  min-height: 300px
+  padding-right: 2%
+  padding-top: 2%
+
+@media screen and (max-width: 768px)
+  .section-img-right
+    background-repeat: no-repeat
+    background-position-y: 40%
+    height: 40vw
+    background-size: 70%
+    background-position-x: 40%
+    margin-top: 15%
+
+@media screen and (max-width: 768px)
+  .section-text-right
+    background-repeat: no-repeat
+    background-position-y: 40%
+    background-size: 70%
+    background-position-x: 40%
+    margin-top: 15%
+
+.section-img-left
+  background-repeat: no-repeat
+  background-size: 90%
+  background-position-x: -120%
+  background-position-y: 0%
+
+@media screen and (max-width: 768px)
+  .section-img-left
+    background-repeat: no-repeat
+    background-position-y: 40%
+    height: 40vw
+    background-size: 70%
+    background-position-x: 40%
+    margin-top: 15%
+
+.content-row-right
+  margin-top: 15% !important
+  background-repeat: no-repeat
+  background-position: 110%
+  height: calc(500px - 20vw)
+
+.content-row-left
+  margin-top: 15% !important
+  background-repeat: no-repeat
+  background-position: 110%
+
+.section-button
+  width: 40vw
+
+@media screen and (max-width: 768px)
+  .section-button
+    width: 90%
+    margin-left: 5% !important
+
+.service-section
+  .content-Holder
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    padding: 0 5px
+  .service-Card
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+    min-height: 365px
+    padding: 25px 20px
+    margin-left: 10px
+    margin-right: 10px
+  &.service-Card
+    -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07)
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07)
+    &:active
+      -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07)
+      box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07)
+
+@media (min-width: 670px)
+  .service-Card .card-Buttons
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    -ms-flex-preferred-size: 31%
+    flex-basis: 31%
+    margin-left: 20px
+    margin-top: 0
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+
+.service-Card .card-Buttons
+  margin-top: 20px
+  \:first-child
+    margin-right: 15px
+
+@media (min-width: 860px)
+  a.card-Content
+    img, svg
+      position: absolute
+      width: 230px
+      height: 230px
+      left: -35px
+      top: calc(50% - 125px)
+  .card-Content
+    .service-Img
+      position: absolute
+      width: 50vw
+      height: auto
+      left: 0
+      top: 0
+    padding: 0 0 0 50vw
+
+@media (max-width: 860px)
+  a.card-Content
+    img, svg
+      -webkit-box-align: center
+      -ms-flex-align: center
+      align-items: center
+  .card-Content .service-Img, div.card-Content svg
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+  .card-Content
+    text-align: center
+  .service-Card .card-Buttons
+    text-align: center
+    \:first-child
+      margin-bottom: 15px
+
+a.card-Content h2, div.card-Content h2
+  margin: 0 0 5px
+  white-space: normal
+
+.card-Content .service-features .page-listItem img
+  width: 2em
+
+.page-listItem2 img
+  margin-right: 5px
+
+.Event-List
+  padding-bottom: 40px
+
+//Buttons
+
+@media (min-width: 670px)
+  .linerCalloutLink .buttons .cfa-Button
+    margin-top: 0
+
+.linerCalloutLink .buttons .cfa-Button
+  margin-top: 20px
+
+.cfa-Button-G
+  color: #fff !important
+  background: #3398be !important
+
+.cfa-Button
+  white-space: nowrap
+  display: inline-block
+  height: 40px
+  line-height: 40px
+  padding: 0 14px
+  -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08)
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08)
+  background: #fff
+  border-radius: 4px
+  font-size: 15px
+  font-weight: 600
+  text-transform: uppercase
+  letter-spacing: .025em
+  color: #6772e5
+  text-decoration: none
+
+.cfa-Button-G
+  &:focus, &:hover
+    color: #fff
+    background-color: #7795f8
+
+.cfa-Button
+  &:focus, &:hover
+    color: #7795f8
+    -webkit-transform: translateY(-1px)
+    transform: translateY(-1px)
+    -webkit-box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08)
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08)
+
+.cfa-Button-G:active
+  color: #e6ebf1
+  background-color: #555abf
+
+.cfa-Button
+  &:focus, &:hover
+    color: #7795f8
+    -webkit-transform: translateY(-1px)
+    transform: translateY(-1px)
+    -webkit-box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08)
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08)

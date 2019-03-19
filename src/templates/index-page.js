@@ -1,15 +1,17 @@
 import React from "react";
+import "semantic-ui-css/semantic.min.css";
 import PropTypes from "prop-types";
 import Layout from "../components/Layout";
+import BlogRoll from "../components/BlogRoll";
 import { graphql } from "gatsby";
 import {
-  header,
   Header,
   Container,
   Grid,
   Image,
   Reveal,
-  Card
+  Card,
+  Button
 } from "semantic-ui-react";
 
 const IndexPage = ({ data, image }) => {
@@ -52,47 +54,88 @@ const IndexPage = ({ data, image }) => {
               paddingBottom: "1em"
             }}
           >
-            <h4 style={{ paddingLeft: "2em", paddingRight: "2em" }}>
+            <Header
+              as="h5"
+              style={{
+                paddingLeft: "1em",
+                paddingRight: "1em",
+                color: "white"
+              }}
+            >
               ।। जय श्री राम ।। जय श्री अंजनीलाल ।। ॐ नमः शिवाय ।।
-            </h4>
-            <h1 style={{ paddingLeft: "1em", paddingRight: "1em" }}>
+            </Header>
+            <Header
+              as="h1"
+              style={{
+                paddingLeft: "1em",
+                paddingRight: "1em",
+                color: "white"
+              }}
+            >
               {frontmatter.title}
-            </h1>
-            <h4 style={{ paddingLeft: "2em", paddingRight: "2em" }}>
+            </Header>
+            <Header
+              as="h4"
+              style={{
+                paddingLeft: "2em",
+                paddingRight: "2em",
+                color: "white"
+              }}
+            >
               म.प्र. शासन द्वारा पंजीकृत ट्रस्ट (धर्मिक, सामाजिक, राष्ट्रीय एवं
               मानव हितार्थ कार्यो में अग्रणी संस्था)
-            </h4>
+            </Header>
           </div>
         </div>
       </div>
-      <section
-        className="section section--gradient"
-        style={{ backgroundColor: "whitesmoke" }}
-      >
-        <div className="container">
-          <div className="column is-10 is-offset-1">
-            <div className="content">
-              <div className="tile">
+
+      <Container>
+        <div
+          class="service-Main service-Card"
+          style={{
+            padding: "1.5em",
+            margin: "0.5em 0 0.5em 0"
+          }}
+        >
+          {/* <div class="card-Content"> */}
+          {/* <img
+              class="service-Img"
+              src="../img/coffee.png"
+              alt=""
+              width="130em"
+            /> */}
+          <Grid>
+            <Grid.Row columns={2}>
+              <Grid.Column>
                 <Header
-                  as="h1"
+                  as="h2"
                   color="teal"
                   className="title"
                   style={{
                     padding: "0.5em 0em 0.5em 0em"
                   }}
                 >
-                  {frontmatter.mainpitch.title}
+                  <span>{frontmatter.mainpitch.title}</span>
                 </Header>
-              </div>
-              <div className="tile">
-                <Header as="h3" color="brown" className="subtitle">
+              </Grid.Column>
+              <Grid.Column>
+                <Header as="h4" color="brown" className="subtitle">
                   {frontmatter.mainpitch.description}
                 </Header>
-              </div>
-            </div>
-          </div>
+                <div class="card-Buttons">
+                  <a
+                    class="cfa-Button cfa-Button-G"
+                    href="./services/web-development"
+                  >
+                    Know More
+                  </a>
+                </div>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+          {/* </div> */}
         </div>
-      </section>
+      </Container>
       <Container fluid>
         <Grid divided="vertically">
           <Grid.Row columns={3}>
@@ -105,46 +148,48 @@ const IndexPage = ({ data, image }) => {
                 borderColor: "white"
               }}
             >
-              <Reveal animated="fade">
-                <Reveal.Content visible>
-                  <Image
-                    src={
-                      !!frontmatter.hero.image1.image.childImageSharp
-                        ? frontmatter.hero.image1.image.childImageSharp.fluid
-                            .src
-                        : frontmatter.hero.image1.image
-                    }
-                    style={{
-                      display: "block",
-                      marginLeft: "auto",
-                      marginRight: "auto",
-                      height: "50vh",
-                      width: "100vw",
-                      objectFit: "cover",
-                      objectPosition: "center"
-                    }}
-                  />
-                </Reveal.Content>
-                <Reveal.Content hidden>
-                  <Image
-                    src={
-                      !!frontmatter.hero.image1.imageb.childImageSharp
-                        ? frontmatter.hero.image1.imageb.childImageSharp.fluid
-                            .src
-                        : frontmatter.hero.image1.imageb
-                    }
-                    style={{
-                      //   display: "block",
-                      marginLeft: "auto",
-                      marginRight: "auto",
-                      height: "50vh",
-                      width: "100vw",
-                      objectFit: "cover",
-                      objectPosition: "center"
-                    }}
-                  />
-                </Reveal.Content>
-              </Reveal>
+              <Card href="/" style={{ width: "100%" }}>
+                <Reveal animated="fade">
+                  <Reveal.Content visible>
+                    <Image
+                      src={
+                        !!frontmatter.hero.image1.image.childImageSharp
+                          ? frontmatter.hero.image1.image.childImageSharp.fluid
+                              .src
+                          : frontmatter.hero.image1.image
+                      }
+                      style={{
+                        display: "block",
+                        marginLeft: "auto",
+                        marginRight: "auto",
+                        height: "50vh",
+                        width: "100vw",
+                        objectFit: "cover",
+                        objectPosition: "center"
+                      }}
+                    />
+                  </Reveal.Content>
+                  <Reveal.Content hidden>
+                    <Image
+                      src={
+                        !!frontmatter.hero.image1.imageb.childImageSharp
+                          ? frontmatter.hero.image1.imageb.childImageSharp.fluid
+                              .src
+                          : frontmatter.hero.image1.imageb
+                      }
+                      style={{
+                        //   display: "block",
+                        marginLeft: "auto",
+                        marginRight: "auto",
+                        height: "50vh",
+                        width: "100vw",
+                        objectFit: "cover",
+                        objectPosition: "center"
+                      }}
+                    />
+                  </Reveal.Content>
+                </Reveal>
+              </Card>
             </Grid.Column>
             <Grid.Column
               style={{
@@ -154,46 +199,48 @@ const IndexPage = ({ data, image }) => {
                 borderColor: "white"
               }}
             >
-              <Reveal animated="fade">
-                <Reveal.Content visible>
-                  <Image
-                    src={
-                      !!frontmatter.hero.image2.image.childImageSharp
-                        ? frontmatter.hero.image2.image.childImageSharp.fluid
-                            .src
-                        : frontmatter.hero.image2.image
-                    }
-                    style={{
-                      display: "block",
-                      marginLeft: "auto",
-                      marginRight: "auto",
-                      height: "50vh",
-                      width: "100vw",
-                      objectFit: "cover",
-                      objectPosition: "center"
-                    }}
-                  />
-                </Reveal.Content>
-                <Reveal.Content hidden>
-                  <Image
-                    src={
-                      !!frontmatter.hero.image2.imageb.childImageSharp
-                        ? frontmatter.hero.image2.imageb.childImageSharp.fluid
-                            .src
-                        : frontmatter.hero.image2.imageb
-                    }
-                    style={{
-                      //   display: "block",
-                      marginLeft: "auto",
-                      marginRight: "auto",
-                      height: "50vh",
-                      width: "100vw",
-                      objectFit: "cover",
-                      objectPosition: "center"
-                    }}
-                  />
-                </Reveal.Content>
-              </Reveal>
+              <Card href="/" style={{ width: "100%" }}>
+                <Reveal animated="fade">
+                  <Reveal.Content visible>
+                    <Image
+                      src={
+                        !!frontmatter.hero.image2.image.childImageSharp
+                          ? frontmatter.hero.image2.image.childImageSharp.fluid
+                              .src
+                          : frontmatter.hero.image2.image
+                      }
+                      style={{
+                        display: "block",
+                        marginLeft: "auto",
+                        marginRight: "auto",
+                        height: "50vh",
+                        width: "100vw",
+                        objectFit: "cover",
+                        objectPosition: "center"
+                      }}
+                    />
+                  </Reveal.Content>
+                  <Reveal.Content hidden>
+                    <Image
+                      src={
+                        !!frontmatter.hero.image2.imageb.childImageSharp
+                          ? frontmatter.hero.image2.imageb.childImageSharp.fluid
+                              .src
+                          : frontmatter.hero.image2.imageb
+                      }
+                      style={{
+                        //   display: "block",
+                        marginLeft: "auto",
+                        marginRight: "auto",
+                        height: "50vh",
+                        width: "100vw",
+                        objectFit: "cover",
+                        objectPosition: "center"
+                      }}
+                    />
+                  </Reveal.Content>
+                </Reveal>
+              </Card>
             </Grid.Column>
             <Grid.Column
               style={{
@@ -268,6 +315,26 @@ const IndexPage = ({ data, image }) => {
             </Grid.Column>
           </Grid.Row>
         </Grid>
+      </Container>
+      <Container
+        fluid
+        style={{
+          // backgroundColor: "rgb(245, 243, 242)"
+          padding: "1em"
+        }}
+      >
+        <hr />
+        <Header as="h3" className="has-text-weight-semibold is-size-2">
+          नवीन लेख
+        </Header>
+        <BlogRoll />
+        <div className="column is-12 has-text-centered">
+          <div class="card-Buttons">
+            <a class="cfa-Button cfa-Button-G" href="/blog">
+              Read More
+            </a>
+          </div>
+        </div>
       </Container>
     </Layout>
   );

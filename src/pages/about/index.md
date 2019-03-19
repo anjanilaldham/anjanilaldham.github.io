@@ -1,19 +1,46 @@
 ---
-templateKey: 'about-page'
+templateKey: "about-page"
 path: /about
-title: About our values
+title: सदस्य गड़
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
-
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
-
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
-
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+| शुभ नाम                                    | पद                                   |
+| :----------------------------------------- | :----------------------------------- |
+| सुश्री निधि निवेदिता                       | जिला कलेक्टर (पदेन ट्रस्टी)          |
+| श्री गोवर्धन लाल दांगी                     | विधायक ब्यावरा (पदेन ट्रस्टी)        |
+| श्री अखिलेश जोशी                           | न.पा. अध्यक्ष ब्यावरा (पदेन ट्रस्टी) |
+| श्री नारायण सिंह पॉवर पूर्व विधायक         | ट्रस्टी                              |
+| श्री अविनाश कुमार खरे (सेवानिवृत ए डी जे ) | ट्रस्टी                              |
+| श्री मुरारीलाल अग्रवाल चाचा                | उपाध्यक्ष ट्रस्टी                    |
+| श्री कैलाशनारायण गुप्ता टाटा वाला          | ट्रस्टी                              |
+| श्री ओमप्रकाश जुलानिया (हरिओम)             | कोषाध्यक्ष ट्रस्टी                   |
+| श्री जुगलकिशोर गुप्ता टाटा वाला            | ट्रस्टी                              |
+| श्री गोविन्द बड़ोने (पत्रकार)               | सचिव ट्रस्टी                         |
+| श्री सुरेशचन्द्र अग्रवाल (बुक सेलर)        | अध्यक्ष ट्रस्टी                      |
+| श्री दिनेश मंगल                            | उपकोषाध्यक्ष ट्रस्टी                 |
+| श्री विष्णुप्रसाद अग्रवाल (मुन्ना)         | कनिष्ठ उपाध्यक्ष ट्रस्टी             |
+| श्री श्रीकिशन साहू                         | ट्रस्टी                              |
+| श्री प्रमोद कुमार खरे प्रोफेसर             | सहसचिव सदस्य                         |
+| श्री रमेशचन्द्र शर्मा                      | सदस्य                                |
+| श्री मोहनलाल गुप्ता (मेडिकल)               | सदस्य                                |
+| श्री श्रीनाथदास सोनी                       | सदस्य                                |
+| श्री दिलीप कुमार बजाज                      | सदस्य                                |
+| श्री चन्द्रशेखर जजावरा                     | सदस्य                                |
+| श्री दामोदरदास गुप्ता (एफ सी आई)           | सदस्य                                |
+| श्री कृष्ण कुमार उपाध्याय                  | सदस्य                                |
+| श्री प्रशान्त विजयवर्गीय (कम्प्यूटर)       | सदस्य                                |
+| श्री गिरिराज कसेरा                         | सदस्य                                |
+| श्री मधुसूदन मूंदड़ा                        | सदस्य                                |
+| श्री घनश्याम पाराशर                        | सदस्य                                |
+| श्री राजेन्द्र सर्राफ                      | सदस्य                                |
+| श्री रमेशचन्द्र अग्रवाल (सन्त)             | सदस्य                                |
+| श्री नन्दकिशोर अग्रवाल                     | सदस्य                                |
+| श्री हर्ष नामदेव जेठानियाँ                 | सदस्य                                |
+| श्री अमित कुशवाह (एडवोकेट)                 | सदस्य                                |
+| श्री सीमान्त गुप्ता                        | सदस्य                                |
+| श्री श्रीनाथ अग्रवाल                       | सदस्य                                |
+| श्री दामोदरदास गुप्ता भानेज                | सदस्य                                |
+| श्री बसन्त कुमार अग्रवाल                   | सदस्य                                |
+| श्री केदारदास अग्रवाल                      | सदस्य                                |
+| श्री अनूप कुमार अग्रवाल                    | सदस्य                                |
+| श्री ओमप्रकाश विजय (दिल्ली)                | सदस्य                                |

@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 // import github from "../img/github-icon.svg";
 // import logo from "../img/logo.svg";
 import "semantic-ui-css/semantic.min.css";
+import { Header } from "semantic-ui-react";
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -43,7 +44,7 @@ const Navbar = class extends React.Component {
         <div className="container is-fluid">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              श्री अंजनी लाल मंदिर धाम
+              <Header as="h4">श्री अंजनी लाल मंदिर धाम</Header>
             </Link>
             {/* Hamburger menu */}
             <div
@@ -61,23 +62,26 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-end has-text-centered">
-              <Link className="navbar-item" to="#">
-                मंदिर
+              <Link className="navbar-item" to="/mandir">
+                <Header as="h4">मंदिर</Header>
+              </Link>
+              {/* <Link className="navbar-item" to="/">
+                <Header as="h4">उपलब्धिया</Header>
+              </Link> */}
+              <Link className="navbar-item" to="/blog">
+                <Header as="h4">लेख</Header>
+              </Link>
+              <Link
+                className="navbar-item"
+                to="/blog/2015-04-20-mandir-history"
+              >
+                <Header as="h4">इतिहास</Header>
               </Link>
               <Link className="navbar-item" to="/about">
-                उपलब्धिया
-              </Link>
-              <Link className="navbar-item" to="/products">
-                गतिविधिया
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                इतिहास
+                <Header as="h4">सदस्य गड़</Header>
               </Link>
               <Link className="navbar-item" to="/contact">
-                सदस्य गड़
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                संपर्क सूत्र
+                <Header as="h4">संपर्क सूत्र</Header>
               </Link>
             </div>
           </div>

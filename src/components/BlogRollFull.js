@@ -4,11 +4,11 @@ import "semantic-ui-css/semantic.min.css";
 import { Link, graphql, StaticQuery } from "gatsby";
 import { Card, Grid, Button, Image } from "semantic-ui-react";
 
-class BlogRoll extends React.Component {
+class BlogRollFull extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
-    let imagePath;
+
     return (
       <Grid
         columns={2}
@@ -29,11 +29,11 @@ class BlogRoll extends React.Component {
                   // marginRight: "2px"
                   // minHeight: "30vh",
                   padding: "2.5em",
-                  minWidth: "45vw",
+                  minWidth: "40vw",
                   borderRadius: "4px",
                   boxShadow:
                     "0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07)",
-                  width: "90%"
+                  width: "100%"
                 }}
               >
                 <Image
@@ -103,7 +103,7 @@ class BlogRoll extends React.Component {
   }
 }
 
-BlogRoll.propTypes = {
+BlogRollFull.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array
@@ -114,9 +114,8 @@ BlogRoll.propTypes = {
 export default () => (
   <StaticQuery
     query={graphql`
-      query BlogRollQuery {
+      query BlogRollFullQuery {
         allMarkdownRemark(
-          limit: 4
           sort: { order: DESC, fields: [frontmatter___date] }
           filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
         ) {
@@ -145,6 +144,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <BlogRoll data={data} count={count} />}
+    render={(data, count) => <BlogRollFull data={data} count={count} />}
   />
 );
