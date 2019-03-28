@@ -8,7 +8,7 @@ class BlogRoll extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
-    let imagePath;
+    // let imagePath;
     return (
       <Grid
         columns={2}

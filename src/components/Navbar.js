@@ -43,6 +43,14 @@ const Navbar = class extends React.Component {
       >
         <div className="container is-fluid">
           <div className="navbar-brand">
+            <a class="navbar-item" href="/">
+              <img
+                src="/img/logo.png"
+                alt="Anjanilal Mandir Dham"
+                width="auto"
+                height="32"
+              />
+            </a>
             <Link to="/" className="navbar-item" title="Logo">
               <Header as="h4">श्री अंजनी लाल मंदिर धाम</Header>
             </Link>

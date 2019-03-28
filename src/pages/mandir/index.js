@@ -1,10 +1,9 @@
 import React from "react";
 import "semantic-ui-css/semantic.min.css";
-import { Container, Header } from "semantic-ui-react";
+import { Header } from "semantic-ui-react";
 
 import Layout from "../../components/Layout";
 import PageHero from "../../components/PageHero";
-import { relative } from "upath";
 
 export default class MandirPage extends React.Component {
   render() {
@@ -20,7 +19,11 @@ export default class MandirPage extends React.Component {
           <div class="content-Holder">
             <div class="service-Main service-Card">
               <div class="card-Content">
-                <img class="service-Img" src="./img/Slide_01_Ram_Mandir.jpg" />
+                <img
+                  class="service-Img"
+                  src="./img/Slide_01_Ram_Mandir.jpg"
+                  alt="Shree Ram Mandir"
+                />
                 <Header as="h2">
                   <span>श्री राम मंदिर</span>
                 </Header>
@@ -49,7 +52,11 @@ export default class MandirPage extends React.Component {
           <div class="content-Holder">
             <div class="service-Main service-Card">
               <div class="card-Content">
-                <img class="service-Img" src="./img/Slide_02_Naya_Mandir.jpg" />
+                <img
+                  class="service-Img"
+                  src="./img/Slide_02_Naya_Mandir.jpg"
+                  alt="Shree Anjanilal Mandir"
+                />
                 <Header as="h2">
                   <span>श्री अंजनीलाल मंदिर</span>
                 </Header>
@@ -77,7 +84,11 @@ export default class MandirPage extends React.Component {
           <div class="content-Holder">
             <div class="service-Main service-Card">
               <div class="card-Content">
-                <img class="service-Img" src="./img/Slide_04_Shiv_Mandir.jpg" />
+                <img
+                  class="service-Img"
+                  src="./img/Slide_04_Shiv_Mandir.jpg"
+                  alt="Shree Mahadev Mandir"
+                />
                 <Header as="h2">
                   <span>श्री व्दादशज्योतिर्लिगेश्वर महादेव मंदिर</span>
                 </Header>

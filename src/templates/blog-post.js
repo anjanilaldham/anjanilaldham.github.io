@@ -68,7 +68,7 @@ export const BlogPostTemplate = ({
                   </Grid.Column>
                 </Grid.Row>
               </Grid>
-              <p>{description}</p>
+              {/* <p>{description}</p> */}
               <PostContent content={content} />
               {tags && tags.length ? (
                 <div style={{ marginTop: `4rem` }}>

@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-image: /img/old_members.jpg
+image: /img/blog-noimg.png
 title: श्री अंजनीलाल मन्दिर धाम की गतिविधिया
 author: श्री बी. एल. नामदेव (पूर्व सचिव)
 date: 2015-04-25T15:04:10.000Z

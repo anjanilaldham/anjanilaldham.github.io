@@ -10,8 +10,7 @@ import {
   Grid,
   Image,
   Reveal,
-  Card,
-  Button
+  Card
 } from "semantic-ui-react";
 
 const IndexPage = ({ data, image }) => {
@@ -31,6 +30,7 @@ const IndexPage = ({ data, image }) => {
         }}
       >
         <div
+          className="columns is-desktop"
           style={{
             display: "flex",
             // height: "150px",
@@ -54,37 +54,49 @@ const IndexPage = ({ data, image }) => {
               paddingBottom: "1em"
             }}
           >
-            <Header
-              as="h5"
-              style={{
-                paddingLeft: "1em",
-                paddingRight: "1em",
-                color: "white"
-              }}
-            >
-              ।। जय श्री राम ।। जय श्री अंजनीलाल ।। ॐ नमः शिवाय ।।
-            </Header>
-            <Header
-              as="h1"
-              style={{
-                paddingLeft: "1em",
-                paddingRight: "1em",
-                color: "white"
-              }}
-            >
-              {frontmatter.title}
-            </Header>
-            <Header
-              as="h4"
-              style={{
-                paddingLeft: "2em",
-                paddingRight: "2em",
-                color: "white"
-              }}
-            >
-              म.प्र. शासन द्वारा पंजीकृत ट्रस्ट (धर्मिक, सामाजिक, राष्ट्रीय एवं
-              मानव हितार्थ कार्यो में अग्रणी संस्था)
-            </Header>
+            <div className="column">
+              <img
+                src="/img/logow.png"
+                alt="Logo"
+                style={{
+                  width: "5em",
+                  height: "auto"
+                }}
+              />
+            </div>
+            <div className="column">
+              <Header
+                as="h5"
+                style={{
+                  paddingLeft: "1em",
+                  paddingRight: "1em",
+                  color: "white"
+                }}
+              >
+                ।। जय श्री राम ।। जय श्री अंजनीलाल ।। ॐ नमः शिवाय ।।
+              </Header>
+              <Header
+                as="h1"
+                style={{
+                  paddingLeft: "1em",
+                  paddingRight: "1em",
+                  color: "white"
+                }}
+              >
+                {frontmatter.title}
+              </Header>
+              <Header
+                as="h4"
+                style={{
+                  paddingLeft: "2em",
+                  paddingRight: "2em",
+                  color: "white"
+                }}
+              >
+                म.प्र. शासन द्वारा पंजीकृत ट्रस्ट (धर्मिक, सामाजिक, राष्ट्रीय
+                एवं मानव हितार्थ कार्यो में अग्रणी संस्था)
+              </Header>
+            </div>
           </div>
         </div>
       </div>
@@ -123,10 +135,7 @@ const IndexPage = ({ data, image }) => {
                   {frontmatter.mainpitch.description}
                 </Header>
                 <div class="card-Buttons">
-                  <a
-                    class="cfa-Button cfa-Button-G"
-                    href="./services/web-development"
-                  >
+                  <a class="cfa-Button cfa-Button-G" href="/mandir">
                     Know More
                   </a>
                 </div>
@@ -148,7 +157,10 @@ const IndexPage = ({ data, image }) => {
                 borderColor: "white"
               }}
             >
-              <Card href="/" style={{ width: "100%" }}>
+              <Card
+                href="/blog/2015-04-15-rammandir/"
+                style={{ width: "100%" }}
+              >
                 <Reveal animated="fade">
                   <Reveal.Content visible>
                     <Image
@@ -199,7 +211,10 @@ const IndexPage = ({ data, image }) => {
                 borderColor: "white"
               }}
             >
-              <Card href="/" style={{ width: "100%" }}>
+              <Card
+                href="/blog/2015-04-15-anjanilalmandir/"
+                style={{ width: "100%" }}
+              >
                 <Reveal animated="fade">
                   <Reveal.Content visible>
                     <Image
@@ -251,7 +266,10 @@ const IndexPage = ({ data, image }) => {
                 borderColor: "white"
               }}
             >
-              <Card href="/" style={{ width: "100%" }}>
+              <Card
+                href="/blog/2015-04-15-shivmandir/"
+                style={{ width: "100%" }}
+              >
                 <Reveal animated="fade">
                   <Reveal.Content visible>
                     <Image

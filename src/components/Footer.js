@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import facebook from "../img/social/facebook.svg";
-import instagram from "../img/social/instagram.svg";
-import twitter from "../img/social/twitter.svg";
+// import facebook from "../img/social/facebook.svg";
+// import instagram from "../img/social/instagram.svg";
+// import twitter from "../img/social/twitter.svg";
 
 const Footer = class extends React.Component {
   render() {
