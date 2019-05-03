@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
-
+import elementick from "../img/line-logo.png";
+import { auto } from "eol";
 // import facebook from "../img/social/facebook.svg";
 // import instagram from "../img/social/instagram.svg";
 // import twitter from "../img/social/twitter.svg";
@@ -66,7 +67,15 @@ const Footer = class extends React.Component {
                   </ul>
                 </section>
               </div>
-              <div className="column is-4 social">
+              <div className="column is-4">
+                <h6>Developed and Maintained by</h6>
+                <a title="elementick" href="https://www.elementick.com">
+                  <img
+                    src={elementick}
+                    alt="Elementick"
+                    style={{ width: auto, height: "60px" }}
+                  />
+                </a>
                 {/* <a title="facebook" href="https://facebook.com">
                   <img
                     src={facebook}
